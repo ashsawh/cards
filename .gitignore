@@ -1,0 +1,4 @@
+vendors/*
+tests/coverage/*
+.git
+.idea

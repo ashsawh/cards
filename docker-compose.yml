@@ -1,0 +1,21 @@
+app:
+  image: webdevops/php-dev
+  container_name: media-app
+  ports:
+    - "8000:8000"
+  command: tail -f ./app/app.log
+  volumes:
+    - .:/app
+
+composer:
+  image: composer/composer
+  container_name: media-comp
+  command: install
+  volumes:
+    - .:/app
+
+sonarqube:
+  image: sonarqube
+  container_name: media-qube
+  ports:
+    - "127.0.0.1:9000:9000"

@@ -1,0 +1,12 @@
+{
+  "name": "MoneyMedia/Cards",
+  "require": {
+    "monolog/monolog": "1.0.*",
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Media\\": "src/"
+    }
+  }
+}
